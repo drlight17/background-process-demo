@@ -7,4 +7,7 @@ This demo uses mediapipe work from [this](https://github.com/ouchunrun/virtual-b
 
 See it live 👉[HERE](https://drlight.mooo.com/demo/)!
 
+Tested with the following browsers:
+
+Google Chrome (+), MS IE 11 (-), MS Edge (+), Yandex browser (-), Safari (-), Mozilla Firefox (+-)
 
