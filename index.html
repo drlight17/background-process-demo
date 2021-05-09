@@ -53,17 +53,21 @@
                 </center>
                 <div class="card-body">
                   <h5 class="card-title">Видео поток</h5>
-                  <p class="card-text">Старт и стоп включают и отключают поток с камеры. Блюр - включает замыливание фона.</p>
+                  <p class="card-text">"Старт" и "стоп" включают и отключают поток с камеры. "Включить обработку" запускает обработку потока.</p>
                   <div class="justify-content-between align-items-center">
                     <div class="btn-group btn-group-sm">
-                      <button id="start-btn" type="button" class="btn btn-sm btn-outline-success">Старт</button>
-                      <button id="effect-btn" type="button" class="btn btn-sm btn-outline-secondary" disabled>Включить эффект</button>
-                      <button id="uneffect-btn" type="button" class="btn btn-sm btn-outline-secondary" hidden>Отключить эффект</button>
-					  <select id="effect_list">
-						<option value="blur">Размытие</option>--
+                      <button title="Включить захват камеры" id="start-btn" type="button" class="btn btn-sm btn-outline-success">Старт</button>
+                      <button title="Включить обработку" id="effect-btn" type="button" class="btn btn-sm btn-outline-secondary" disabled>Включить обработку</button>
+                      <button title="Отключить обработку" id="uneffect-btn" type="button" class="btn btn-sm btn-outline-secondary" hidden>Отключить обработку</button>
+					  <select title="Выберите эффект для обработки" id="effect_list">
+						<option title="Заменяет фон на размытый" value="blur">Размытие</option>
 						<!--<option value="background" selected>Кирпичная стена</option> -->
-					  </select> 
-                      <button id="stop-btn" type="button" class="btn btn-sm btn-outline-danger" disabled>Стоп</button>
+					  </select>
+					  <select id="pipe_list" title="Выберите движок обработки">
+						  <option title="Обработка на GPU" value="webgl2">webgl</option>
+						  <option title="Обработка на СPU" value="canvas2dcpu">canvas_cpu</option>
+					  </select>
+                      <button title="Отключить захват камеры" title="" id="stop-btn" type="button" class="btn btn-sm btn-outline-danger" disabled>Стоп</button>
 					  <!-- <button id="showfps-btn" type="button" class="btn btn-sm btn-outline-primary" disabled>Показать FPS</button>
 					  <button id="hidefps-btn" type="button" class="btn btn-sm btn-outline-primary" hidden>Скрыть FPS</button>-->
                     </div>
