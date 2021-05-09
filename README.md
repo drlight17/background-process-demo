@@ -3,4 +3,4 @@ Demo using tensorflow, bodyPix and mediapipe for realtime image background proce
 
 It supports only blur background effect for now. Additional background will be added soon!
 
-See live [HERE](https://drlight.mooo.com/demo/)!
+See it live [HERE](https://drlight.mooo.com/demo/)!
